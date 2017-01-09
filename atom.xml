@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tank&#39;s C</title>
+  <subtitle>来啊，快活啊，反正有大把时光</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://tankc.cn/"/>
+  <updated>2017-01-07T10:30:44.000Z</updated>
+  <id>https://tankc.cn/</id>
+  
+  <author>
+    <name>Tank</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown-忍不住爱上这写作方式</title>
+    <link href="https://tankc.cn/2017/01/07/Markdown-%E5%BF%8D%E4%B8%8D%E4%BD%8F%E7%88%B1%E4%B8%8A%E8%BF%99%E5%86%99%E4%BD%9C%E6%96%B9%E5%BC%8F/"/>
+    <id>https://tankc.cn/2017/01/07/Markdown-忍不住爱上这写作方式/</id>
+    <published>2017-01-07T03:02:31.000Z</published>
+    <updated>2017-01-07T10:30:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>Markdown</em> 是一种轻量级标记语言，允许人们<strong>使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(HTML)文档</strong>，现在被广泛应用于Github，Stack Overflow，简书，网易云笔记等知名网站或应用。而Hexo也默认使用Markdown来进行文章编写，写作过程淋漓畅快，而无需像传统文本编辑器那样需要设定特殊文本格式。<br>以下正式对Markdown语法进行简单介绍。</p>
+<blockquote>
+<p>标题</p>
+</blockquote>
+<p>HTML标题一般分为6级，对应为h1…h6，在Markdown中使用<em>#</em>号数来标记，如：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section"># 一级标题</span></div></pre></td></tr></table></figure>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">## 二级标题</span></div></pre></td></tr></table></figure>
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">### 三级标题</span></div></pre></td></tr></table></figure>
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">#### 四级标题</span></div></pre></td></tr></table></figure>
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">##### 五级标题</span></div></pre></td></tr></table></figure>
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">###### 六级标题</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>普通文本</p>
+</blockquote>
+<p>我是一段普通的文字，突然我<strong>加粗</strong>了，我也<strong>加粗</strong>了，然后我<em>斜</em>了，我也<em>斜</em>了<br>我是带<span style="color:#f0f">颜色</span>的字体，在markdown显示颜色需要直接使用html语法<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">我是一段普通的文字，突然我<span class="strong">**加粗**</span>了，我也<span class="strong">__加粗__</span>了，然后我<span class="emphasis">*斜*</span>了，我也<span class="emphasis">_斜_</span>了</div><div class="line">我是带&lt;span style="color:#f0f"&gt;颜色&lt;/span&gt;的字体，在markdown显示颜色需要直接使用html语法</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>表格</p>
+</blockquote>
+<p>要通过Markdown来展示一个表格也是相当方便的。</p>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>描述</th>
+<th>显示效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>加粗</td>
+<td>显示加粗文字</td>
+<td><strong>我是加粗文字</strong></td>
+</tr>
+<tr>
+<td>斜体</td>
+<td>显示斜体</td>
+<td><em>我是斜体</em></td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(如果表格显示无效，请加空行空行空行)</div><div class="line">|标题|描述|显示效果|</div><div class="line">|-|-|-|</div><div class="line">|加粗|显示加粗文字|<span class="strong">__我是加粗文字__</span>|</div><div class="line">|斜体|显示斜体|<span class="emphasis">_我是斜体_</span>|</div></pre></td></tr></table></figure>
+<blockquote>
+<p>代码标记</p>
+</blockquote>
+<p>代码标记估计是markdown里最出彩地方了，尤其是对程序员来说。<br>显示一段javascript代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"hello world"</span>);</div><div class="line">&#125;)();</div></pre></td></tr></table></figure></p>
+<p>显示一段php代码<br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">say</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">echo</span> <span class="string">"hello world"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>上面效果很炫，自带语法高亮，这不正是程序员的真爱吗！语法为三个上引号<strong>`</strong>后面空格+语言名称<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">显示一段javascript代码</div><div class="line">```javascript</div><div class="line">(function()&#123;</div><div class="line">    console.log(&quot;hello world&quot;);</div><div class="line">&#125;)();</div><div class="line">``` </div><div class="line">显示一段php代码</div><div class="line">```php</div><div class="line">function say() &#123;</div><div class="line">    echo &quot;hello world&quot;;</div><div class="line">&#125;</div><div class="line">```</div></pre></td></tr></table></figure></p>
+<p>很方便大家分享代码。</p>
+<blockquote>
+<p>图片</p>
+</blockquote>
+<p>Hexo本地图片通常放到source/images目录里，markdown支持调用本地图片跟远程图片两种方式。<br>调用本地图片<br><img src="/images/markdown/1.gif" alt="本地小兔子玩萝卜"><br>调用远程图片<br><img src="http://tankc.cn/images/markdown/1.gif" alt="远程小兔子玩萝卜"><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">调用本地图片</div><div class="line">![<span class="string">本地小兔子玩萝卜</span>](<span class="link">/images/markdown/1.gif</span>)</div><div class="line">调用远程图片</div><div class="line">![<span class="string">远程小兔子玩萝卜</span>](<span class="link">http://tankc.cn/images/markdown/1.gif</span>)</div></pre></td></tr></table></figure></p>
+<p>可以看到效果是一样的，但调用的地址是不同的。</p>
+<blockquote>
+<p>链接</p>
+</blockquote>
+<p>在markdown使用链接也非常简单，只需要把调用图片的语法基础上去掉！即可。<br>跳转到<a href="http://tankc.cn" target="_blank" rel="external">首页</a>，跳转到<a href="/about">关于</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">跳转到[<span class="string">首页</span>](<span class="link">http://tankc.cn</span>)，跳转到[<span class="string">关于</span>](<span class="link">/about</span>)</div></pre></td></tr></table></figure></p>
+<p>除此外，还可以使用引用语法，方便使用大量链接的文本，更简洁更易懂。<br>跳转到<a href="http://tankc.cn" target="_blank" rel="external">首页</a>，跳转到<a href="/about">关于</a></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">跳转到[<span class="string">首页</span>][<span class="symbol">1</span>]，跳转到[<span class="string">关于</span>][<span class="symbol">2</span>]</div><div class="line">[<span class="symbol">1</span>]: <span class="link">http://tankc.cn "首页"</span></div><div class="line">[<span class="symbol">2</span>]: <span class="link">/about "关于"</span></div></pre></td></tr></table></figure>
+<p>那么带图片的链接<br><a href="http://tankc.cn" title="鼠标放上去显示文字" target="_blank" rel="external"><img src="http://tankc.cn/images/markdown/1.gif" alt="首页"></a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="string">![首页</span>](<span class="link">http://tankc.cn/images/markdown/1.gif</span>)](<span class="link">http://tankc.cn "鼠标放上去显示文字"</span>)</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<p>引用在整个文章的篇幅中占据挺多。即</p>
+<blockquote>
+<p>我是单行引用 </p>
+</blockquote>
+<p>需要换行</p>
+<blockquote>
+<p>我是多行引用<br>我不需要换行</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 我是单行引用 </span></div><div class="line"></div><div class="line">需要换行</div><div class="line"></div><div class="line"><span class="quote">&gt; 我是多行引用</span></div><div class="line">我不需要换行</div></pre></td></tr></table></figure>
+<blockquote>
+<p>列表</p>
+</blockquote>
+<p>列表通常有无序列表跟有序列表两种，对应HTML的ul, ol</p>
+<p>无序列表</p>
+<ul>
+<li>前端语言<ul>
+<li>javascript</li>
+<li>html</li>
+</ul>
+</li>
+<li>后端语言<ul>
+<li>php</li>
+<li>java</li>
+</ul>
+</li>
+</ul>
+<p>有序列表</p>
+<ol>
+<li>前端语言<ul>
+<li>javascript</li>
+<li>html</li>
+</ul>
+</li>
+<li>后端语言<ul>
+<li>php</li>
+<li>java</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">无序列表</div><div class="line"><span class="bullet">- </span>前端语言</div><div class="line"><span class="code">    - javascript</span></div><div class="line"><span class="code">    - html</span></div><div class="line"><span class="bullet">- </span>后端语言</div><div class="line"><span class="code">    - php</span></div><div class="line"><span class="code">    - java</span></div><div class="line"><span class="code">    </span></div><div class="line">有序列表</div><div class="line"><span class="bullet">1. </span>前端语言</div><div class="line"><span class="code">    - javascript</span></div><div class="line"><span class="code">    - html</span></div><div class="line"><span class="bullet">2. </span>后端语言</div><div class="line"><span class="code">    - php</span></div><div class="line"><span class="code">    - java</span></div></pre></td></tr></table></figure>
+<p>好，写到这里差不多了，以上内容已经足够满足日常需要了，希望对你有帮助，最后以一个分隔线收尾吧。enjoy!</p>
+<hr>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">---</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;Markdown&lt;/em&gt; 是一种轻量级标记语言，允许人们&lt;strong&gt;使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(HTML)文档&lt;/strong&gt;，现在被广泛应用于Github，Stack Overflow，简书，网易云笔记等知名网站或应用。而
+    
+    </summary>
+    
+      <category term="杂项" scheme="https://tankc.cn/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+      <category term="Markdown" scheme="https://tankc.cn/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-快速、简洁且高效的博客框架</title>
+    <link href="https://tankc.cn/2017/01/04/Hexo-%E5%BF%AB%E9%80%9F%E3%80%81%E7%AE%80%E6%B4%81%E4%B8%94%E9%AB%98%E6%95%88%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"/>
+    <id>https://tankc.cn/2017/01/04/Hexo-快速、简洁且高效的博客框架/</id>
+    <published>2017-01-04T07:23:54.000Z</published>
+    <updated>2017-01-09T06:28:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>正如标题所示，Hexo是一个快速、简洁且高效的博客框架，配合Markdown使用，整个写作过程行云流水非常高效。下面将简单介绍整个Hexo博客的简易操作使用。</p>
+<blockquote>
+<p>环境搭建</p>
+</blockquote>
+<p>在使用Hexo之前需要保证本地环境是否有安装node.js和git，安装方式如下：</p>
+<h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>在macOS下安装node.js只需要打开<em><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="external">node.js</a></em>官网，点击macOS Installer下载pkg安装包，安装完后打开终端输入指令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node -v</div></pre></td></tr></table></figure></p>
+<p>如果有返回node.js版本号(目前最新稳定版本是<em>6.9.3</em>)则表示环境已经配好，同时包管理工具<em>npm</em>也随着node.js的安装成功而安装成功。可打开终端输入以下指令进行检查。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -v</div></pre></td></tr></table></figure></p>
+<p>额外建议安装<em><a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a></em>或<em><a href="https://github.com/tj/n" target="_blank" rel="external">n</a></em>作为node.js的版本管理工具，可方便切换不同版本的node.js。</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>安装git可以通过<em><a href="http://brew.sh/" target="_blank" rel="external">Brew</a></em>来安装(Brew为macOS的包管理工具，类似于上面提及的node.js包管理工具nvm/n，如果没有安装Brew可参考其官网指令安装)。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install git</div></pre></td></tr></table></figure></p>
+<p>也可以直接下载<em><a href="https://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">git</a></em>的pkg包进行安装，安装完打开终端输入指令进行检查。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git --version</div></pre></td></tr></table></figure></p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>待node.js及Git工具配置好，我们终于可以开始安装Hexo了，只需要一行命令即可：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>github配置</p>
+</blockquote>
+<p>Hexo最终生成静态页面需要在站点上呈现，我们可以通过自己租赁服务器进行部署，当然有更简单的方式，那就是直接上传到github，并通过<em><a href="https://pages.github.com/" target="_blank" rel="external">github page</a></em>的魔法来展示。<br>首先登录github(没账号自行注册吧)，然后创建新仓库<br><img src="/images/hexo/1.png" alt=""><br>输入你的站点名，如hexo.github.io，则以后可直接通过<a href="https://hexo.github.io" target="_blank" rel="external">https://hexo.github.io</a> 来访问<br><img src="/images/hexo/2.png" alt=""><br>说了那么多，还没进入主题。现在一切准备工作就绪，可以正式开始Hexo的旅程了。</p>
+<blockquote>
+<p>Hexo使用</p>
+</blockquote>
+<h3 id="初始化Hexo目录"><a href="#初始化Hexo目录" class="headerlink" title="初始化Hexo目录"></a>初始化Hexo目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span>  <span class="comment"># 进入用户当前目录</span></div><div class="line">$ hexo init HexoB<span class="built_in">log</span>  <span class="comment"># 在当前目录初始化HexoBlog，并从github下载默认主题landscape及相关依赖，经过一段时间等待后，目录创建成功</span></div><div class="line">$ <span class="built_in">cd</span> HexoB<span class="built_in">log</span> <span class="comment"># 进入HexoBlog目录</span></div><div class="line">$ npm install <span class="comment"># 安装剩余部分</span></div></pre></td></tr></table></figure>
+<p>安装完毕，查看HexoBlog目录大至有以下几个文件  </p>
+<table>
+<thead>
+<tr>
+<th>目录/文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_config.yml</td>
+<td>网站配置信息,包括标题、描述、语言、主题、路由配置、github部署信息等基本相关相信都可以在这里进行配置</td>
+</tr>
+<tr>
+<td>package.json</td>
+<td>应用程序信息</td>
+</tr>
+<tr>
+<td>scaffolds</td>
+<td>创建模板，默认有draft、page、post三种，也可以创建自己的模板，执行hexo new的时候可指定</td>
+</tr>
+<tr>
+<td>source</td>
+<td>资源目录，生成时_posts目录会被解析到public里面，而其他像_drafts则会被忽略，本地图片资源也放到此目录</td>
+</tr>
+<tr>
+<td>themes</td>
+<td>主题目录，默认主题为landscape，而其他主题也会默认装到这个目录</td>
+</tr>
+</tbody>
+</table>
+<p><em>小技巧</em>：Hexo生成的目录可当成一个node.js的项目，通过VSCode，Sublime Text，WebStorm等工具来管理项目将会变得非常的方便，如：<br><img src="/images/hexo/3.png" alt=""></p>
+<h3 id="运行Hexo"><a href="#运行Hexo" class="headerlink" title="运行Hexo"></a>运行Hexo</h3><p>一般安装好后，简单配置_config.yml信息，就可以直接运行Hexo，打开终端<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/HexoB<span class="built_in">log</span></div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
+<p>如果没有异常的话，终端提示Hexo默认启动端口为4000的HTTP服务，此时你可以访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> ，默认会有一篇hello world的文章</p>
+<h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<p>layout为创建文件的模板，默认有三种形式，post, page, draft，可自定义模板存储到scaffolds目录里，如果是自定义的layout默认为post方式，建立的文章会存储到source/_posts里面。<br>如，创建一篇新文章，执行指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new post Hexo-快速、简洁且高效的博客框架</div></pre></td></tr></table></figure></p>
+<p>执行成功后在source/_posts目录里会有一个文件名为『Hexo-快速、简洁且高效的博客框架.md』的Markdown文件，由于默认使用scaffolds/post.md模板，则默认生成内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: Hexo-快速、简洁且高效的博客框架</div><div class="line">date: 2017-01-05 09:20:51</div><div class="line">tags:</div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p>通过编辑器打开这个文件进行编辑即可。</p>
+<h3 id="创建草稿"><a href="#创建草稿" class="headerlink" title="创建草稿"></a>创建草稿</h3><p>layout如果为draft则表示草稿箱，默认不发布，建立的文章会存储到source/_draft目录里，待要发布时，直接执行指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new draft &lt;title&gt;</div><div class="line">$ hexo publish [layout] &lt;title&gt;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>生成与部署</p>
+</blockquote>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><p>Hexo部署到服务器或github首先需要生成静态文件，默认静态文件会生成到public里，执行指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure></p>
+<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><p>待静态文件生成完毕，打开配置文件_config.yml，找到deploy部分<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: 你的github仓库地址，类似：https://www.github.com/YourName/hexo.github.io</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>配置完成，执行指令，等待片刻即可上传到github：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
+<h3 id="组合部署"><a href="#组合部署" class="headerlink" title="组合部署"></a>组合部署</h3><p>可以将生成静态文件跟部署结合使用，执行指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo g <span class="_">-d</span> <span class="comment"># 相当于hexo generate --deploy</span></div><div class="line"><span class="comment"># 或</span></div><div class="line">$ hexo d -g <span class="comment"># 相当于hexo deploy --generate</span></div></pre></td></tr></table></figure></p>
+<p>ok，通过以上操作，你尝试访问一下<a href="https://hexo.github.io" target="_blank" rel="external">https://hexo.github.io</a> 一个属于你的blog系统就已经搭建好了。enjoy!</p>
+<p><em>&lt;预告&gt;</em> 下一篇将介绍Hexo的写作语法Markdown：<a href="http://tankc.cn/2017/01/07/Markdown-%E5%BF%8D%E4%B8%8D%E4%BD%8F%E7%88%B1%E4%B8%8A%E8%BF%99%E5%86%99%E4%BD%9C%E6%96%B9%E5%BC%8F/" target="_blank" rel="external">Markdown-忍不住爱上这写作方式</a> 敬请关注^O^</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;正如标题所示，Hexo是一个快速、简洁且高效的博客框架，配合Markdown使用，整个写作过程行云流水非常高效。下面将简单介绍整个Hexo博客的简易操作使用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;环境搭建&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在使用Hexo之前需要
+    
+    </summary>
+    
+      <category term="杂项" scheme="https://tankc.cn/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+      <category term="Hexo" scheme="https://tankc.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
