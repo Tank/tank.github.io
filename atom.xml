@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tankc.cn/"/>
-  <updated>2017-01-07T10:30:44.000Z</updated>
+  <updated>2017-01-16T10:53:01.000Z</updated>
   <id>https://tankc.cn/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Blockly-玩具引发的血案（一）</title>
+    <link href="https://tankc.cn/2017/01/16/Blockly-%E7%8E%A9%E5%85%B7%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://tankc.cn/2017/01/16/Blockly-玩具引发的血案（一）/</id>
+    <published>2017-01-16T06:20:46.000Z</published>
+    <updated>2017-01-16T10:53:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>什么是Dash机器人？</p>
+</blockquote>
+<p>这段时间经朋友介绍，了解了一下由 <em><a href="https://cn.makewonder.com/" target="_blank" rel="external">Wonder Workshop</a></em> 出品的风靡欧美青少年可视化编程机器人Dash&amp;Dot，该机器人在Apple Store实体店指定出售（试想能进Apple Store实体店的产品除了苹果自己的东西外能有多少就有多少），也曾经进入白宫让奥巴马跟小朋友一起玩耍，同时也被比尔盖茨太太梅琳达女士一次又一次地推荐，大概长这个样子。<br><img src="/images/blockly/dash&amp;dot.jpeg" alt="Dash&amp;Dot"><br><img src="/images/blockly/obama.jpg" alt="Obama与小朋友玩耍"><br>那么这个萌蠢萌蠢的机器人看上去就是个高级玩具啊，究竟有哪些吸引人的地方呢？<br>我在手机上安装他们的APP–Blockly把玩一番后，不禁侧目相看。机器人上面集成了各种组件像光敏感应器、麦克风、扬声器、距离感应器、机器人探测器、LED灯等，然后在APP上通过各种积木组件搭建，完成可视化编程，最后按一下开始，机器人按你预想的设定或唱歌，或跳舞，或发出各种声音…还可以通过增加外设，进行一些可扩展的编程，这对吸引青少年编程入门及培养逻辑思维都是不错的工具。<br><img src="/images/blockly/blockly_app.PNG" alt="Blockly APP"><br>那么，Dash机器人是如何实现可视化编程的？这就是我们今天的主角。</p>
+<blockquote>
+<p>Blockly</p>
+</blockquote>
+<p>查阅相关资料，发现Dash机器人APP可视化编程是通过Google开源的一个技术 <em><a href="https://developers.google.com/blockly/" target="_blank" rel="external">Blockly</a></em> 来实现的。通过Blockly，用户只需要简单地拖拉预设组件，通过拼装积木的方式构建应用程序，生成Javascript，Python，Dart，Lua等代码后，通过蓝牙或wifi传输给机器人，让机器人动态执行相应代码，最终实现通过APP来操控机器人的行为。<br><img src="/images/blockly/try_blockly.png" alt=""><br>Blockly面向Web、iOS、Android三端开放源码，同时也提供Blockly Developer Tools工具给用户自定义各种组件，允许大家通过Blockly开发各种应用场景。<br>目前通过Blockly实现面向青少年可视化编程的公司有很多，像大名鼎鼎的 <em><a href="https://code.org/" target="_blank" rel="external">Code.org</a></em>, 前面提及的 <em><a href="https://www.makewonder.com/" target="_blank" rel="external">Wonder Workshop</a></em> ，英国BBC出品面向青少年物联网编程的 <em><a href="https://www.microbit.co.uk/" target="_blank" rel="external">MicroBit</a></em> 以及国内的 <em><a href="https://www.codemao.cn/" target="_blank" rel="external">编程猫</a></em> 等。也有很多通过Blockly结合Arduino的公司，像 <em><a href="https://github.com/BlocklyDuino/BlocklyDuino" target="_blank" rel="external">BlocklyDuino</a></em>, 台湾的 <em><a href="https://webduino.io/" target="_blank" rel="external">Webduino</a></em> ，国内的 <em><a href="http://www.kenrobot.com/" target="_blank" rel="external">啃萝卜</a></em> 等，通过可视化界面生成Arduino代码让大家更容易理解硬件编程。</p>
+<blockquote>
+<p>后记</p>
+</blockquote>
+<p>好了，时间关系，今天就先介绍到这里吧，欢迎大家持续关注后续文章。<br><a href="#">Blockly-让程序跑起来（二）</a><br><a href="#">Blockly-自定义组件（三）</a><br><a href="#">Blockly-代码生成(四)</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;什么是Dash机器人？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这段时间经朋友介绍，了解了一下由 &lt;em&gt;&lt;a href=&quot;https://cn.makewonder.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Wo
+    
+    </summary>
+    
+      <category term="Blockly" scheme="https://tankc.cn/categories/Blockly/"/>
+    
+    
+      <category term="Blockly" scheme="https://tankc.cn/tags/Blockly/"/>
+    
+      <category term="Google" scheme="https://tankc.cn/tags/Google/"/>
+    
+      <category term="积木编程" scheme="https://tankc.cn/tags/%E7%A7%AF%E6%9C%A8%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="教育" scheme="https://tankc.cn/tags/%E6%95%99%E8%82%B2/"/>
+    
+      <category term="Dash" scheme="https://tankc.cn/tags/Dash/"/>
+    
+      <category term="Dot" scheme="https://tankc.cn/tags/Dot/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown-忍不住爱上这写作方式</title>
@@ -78,10 +125,10 @@
 <blockquote>
 <p>链接</p>
 </blockquote>
-<p>在markdown使用链接也非常简单，只需要把调用图片的语法基础上去掉！即可。<br>跳转到<a href="http://tankc.cn" target="_blank" rel="external">首页</a>，跳转到<a href="/about">关于</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">跳转到[<span class="string">首页</span>](<span class="link">http://tankc.cn</span>)，跳转到[<span class="string">关于</span>](<span class="link">/about</span>)</div></pre></td></tr></table></figure></p>
-<p>除此外，还可以使用引用语法，方便使用大量链接的文本，更简洁更易懂。<br>跳转到<a href="http://tankc.cn" target="_blank" rel="external">首页</a>，跳转到<a href="/about">关于</a></p>
+<p>在markdown使用链接也非常简单，只需要把调用图片的语法基础上去掉！即可。<br>跳转到<a href="http://tankc.cn">首页</a>，跳转到<a href="/about">关于</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">跳转到[<span class="string">首页</span>](<span class="link">http://tankc.cn</span>)，跳转到[<span class="string">关于</span>](<span class="link">/about</span>)</div></pre></td></tr></table></figure></p>
+<p>除此外，还可以使用引用语法，方便使用大量链接的文本，更简洁更易懂。<br>跳转到<a href="http://tankc.cn">首页</a>，跳转到<a href="/about">关于</a></p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">跳转到[<span class="string">首页</span>][<span class="symbol">1</span>]，跳转到[<span class="string">关于</span>][<span class="symbol">2</span>]</div><div class="line">[<span class="symbol">1</span>]: <span class="link">http://tankc.cn "首页"</span></div><div class="line">[<span class="symbol">2</span>]: <span class="link">/about "关于"</span></div></pre></td></tr></table></figure>
-<p>那么带图片的链接<br><a href="http://tankc.cn" title="鼠标放上去显示文字" target="_blank" rel="external"><img src="http://tankc.cn/images/markdown/1.gif" alt="首页"></a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="string">![首页</span>](<span class="link">http://tankc.cn/images/markdown/1.gif</span>)](<span class="link">http://tankc.cn "鼠标放上去显示文字"</span>)</div></pre></td></tr></table></figure></p>
+<p>那么带图片的链接<br><a href="http://tankc.cn" title="鼠标放上去显示文字"><img src="http://tankc.cn/images/markdown/1.gif" alt="首页"></a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="string">![首页</span>](<span class="link">http://tankc.cn/images/markdown/1.gif</span>)](<span class="link">http://tankc.cn "鼠标放上去显示文字"</span>)</div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>引用</p>
 </blockquote>
@@ -215,7 +262,7 @@
 <p>配置完成，执行指令，等待片刻即可上传到github：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
 <h3 id="组合部署"><a href="#组合部署" class="headerlink" title="组合部署"></a>组合部署</h3><p>可以将生成静态文件跟部署结合使用，执行指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo g <span class="_">-d</span> <span class="comment"># 相当于hexo generate --deploy</span></div><div class="line"><span class="comment"># 或</span></div><div class="line">$ hexo d -g <span class="comment"># 相当于hexo deploy --generate</span></div></pre></td></tr></table></figure></p>
 <p>ok，通过以上操作，你尝试访问一下<a href="https://hexo.github.io" target="_blank" rel="external">https://hexo.github.io</a> 一个属于你的blog系统就已经搭建好了。enjoy!</p>
-<p><em>&lt;预告&gt;</em> 下一篇将介绍Hexo的写作语法Markdown：<a href="http://tankc.cn/2017/01/07/Markdown-%E5%BF%8D%E4%B8%8D%E4%BD%8F%E7%88%B1%E4%B8%8A%E8%BF%99%E5%86%99%E4%BD%9C%E6%96%B9%E5%BC%8F/" target="_blank" rel="external">Markdown-忍不住爱上这写作方式</a> 敬请关注^O^</p>
+<p><em>&lt;预告&gt;</em> 下一篇将介绍Hexo的写作语法Markdown：<a href="http://tankc.cn/2017/01/07/Markdown-%E5%BF%8D%E4%B8%8D%E4%BD%8F%E7%88%B1%E4%B8%8A%E8%BF%99%E5%86%99%E4%BD%9C%E6%96%B9%E5%BC%8F/">Markdown-忍不住爱上这写作方式</a> 敬请关注^O^</p>
 ]]></content>
     
     <summary type="html">
