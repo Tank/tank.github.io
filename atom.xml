@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tankc.cn/"/>
-  <updated>2017-03-02T15:59:47.000Z</updated>
+  <updated>2017-03-02T16:11:54.000Z</updated>
   <id>https://tankc.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://tankc.cn/2017/03/02/FFmpeg-%E4%BD%A0%E8%A6%81%E7%9A%84%E9%83%BD%E5%9C%A8%E8%BF%99%E9%87%8C/"/>
     <id>https://tankc.cn/2017/03/02/FFmpeg-你要的都在这里/</id>
     <published>2017-03-02T06:19:23.000Z</published>
-    <updated>2017-03-02T15:59:47.000Z</updated>
+    <updated>2017-03-02T16:11:54.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="0-开篇"><a href="#0-开篇" class="headerlink" title="0 - 开篇"></a>0 - 开篇</h2><p>&emsp;最近由于项目需要支持微信、QQ手机扫码直播，而对接厂家目前只支持WebRTC的方式，在移动设备端上支持度不够友好，研究一轮发现也没什么好选择，要么直接上<code>RTMP</code>要么直接上<code>HLS</code>或者两者并存。<br>&emsp;RTMP协议全称为Real Time Messaging Protocol(实时消息传输协议)，是由Adobe公司维护的基于TCP的协议族，包括RTMP基本协议及RTMPT/RTMPS/RTMPE等多种变种，在PC时代，由于Falsh占有率极高，而RTMP能直接在Flash上播放，不需要作任何的转换，深受各大直播厂家热爱。<br>&emsp;但是，Flash耗电不安全等各种硬伤在移动互联时代慢慢被抛弃了，尤其是iOS设备，当年乔老爷还在世的时候就喷Flash是垃圾，非常不受待见。所以要想更好地支持各种手机平台的直播，还要把HLS引进来。<br>&emsp;HLS协议全称为HTTP Live Streaming，是苹果公司动态码率自适应技术，为Mac和iOS设备提供良好的音视频服务（每年WWDC大会指定直播协议）。该协议包含一个m3u8的索引文件，文件大概长这个样子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">#EXTM3U</div><div class="line">#EXT-X-VERSION:3</div><div class="line">#EXT-X-MEDIA-SEQUENCE:0</div><div class="line">#EXT-X-TARGETDURATION:5</div><div class="line">#EXT-X-DISCONTINUITY</div><div class="line">#EXTINF:5.003,</div><div class="line">hlsplay-0.ts</div><div class="line">#EXTINF:5.002,</div><div class="line">hlsplay-1.ts</div><div class="line">#EXTINF:5.003,</div><div class="line">hlsplay-2.ts</div><div class="line">#EXTINF:5.004,</div><div class="line">hlsplay-3.ts</div><div class="line">#EXTINF:5.001,</div><div class="line">hlsplay-4.ts</div><div class="line">#EXTINF:3.566,</div><div class="line">hlsplay-5.ts</div></pre></td></tr></table></figure></p>
 <p>可以清晰的看到里面有一堆的<code>.ts</code>，这些都是视频的分片文件，需要播放时，直接在浏览器打开地址如<code><a href="http://ip/live.m3u8" target="_blank" rel="external">http://ip/live.m3u8</a></code>就可以进行直播了，貌似比RTMP更方便，但HLS也有个硬伤，就是延时。因为每次生成分片视频的时候，都会更新m3u8文件，而当用户打开m3u8地址会从头开始读，假如有5个分片，然后每个分片是5秒钟，那么延时就是25秒。<br>&emsp;最后，主角ffmpeg要出场了，这是一个久负盛名的集录制、转换、音视频编码解码功能为一体的完整开源解决方案。轻轻松松地实现多种音视频格式之间的相互转换，ffmpeg套件中包含比较多的工具库，现在只拿其中的ffmpeg命令行工具进行使用。</p>
@@ -68,7 +68,7 @@
 <blockquote>
 <p>屏幕+Mic+摄像头<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ffmpeg <span class="_">-f</span> avfoundation -framerate 30 -i <span class="string">"1:0"</span> \</div><div class="line"><span class="_">-f</span> avfoundation -framerate 30 -video_size 640x480 -i <span class="string">"0"</span> \</div><div class="line">-c:v libx264 -preset ultrafast \</div><div class="line">-filter_complex <span class="string">'overlay=main_w-overlay_w-10:main_h-overlay_h-10'</span> \</div><div class="line">-acodec libmp3lame -ar 44100 -ac 1  <span class="_">-f</span> flv rtmp://localhost:1935/hls/all</div></pre></td></tr></table></figure></p>
 </blockquote>
-<p>具体看，多了一个摄像头的输入源，且视频窗口的尺寸为640x480，同时加了个滤镜。</p>
+<p>具体看，多了一个摄像头的输入源，且视频窗口的尺寸为640x480，同时加了个滤镜。<br>那说好的HLS怎么一直不见出场呢。这个就更简单了，打开Safari，输入地址<code><a href="http://localhost:8080/hls/all.m3u8" target="_blank" rel="external">http://localhost:8080/hls/all.m3u8</a></code>回车，没错，支持HLS的直播也完成了。而如果需要手机浏览器支持，通常会写到HTML5的Video标签里，方便做更多的交互动作。在真实环境中，往往还会将产生的ts文件放至cdn，而m3u8文件也会通过nginx做集群部署等等。这样会更有效地提升播放效率。</p>
 <p>至些。我们的直播已经支持多种丰富的输入模式了。<br>好吧。写得差不多了。应该可以去找老板领鸡腿了。Enjoy!<br><img src="/images/ffmpeg/4.jpg" alt=""></p>
 ]]></content>
     
